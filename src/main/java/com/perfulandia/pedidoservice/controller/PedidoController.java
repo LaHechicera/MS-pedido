@@ -45,7 +45,7 @@ public class PedidoController {
 
     @GetMapping("/estado/{id}")
     public Carrito estado (@PathVariable String id) {
-        return restTemplate.getForObject("https://ms-carrito.onrender.com/api/carrito"+id,Carrito.class);
+        return restTemplate.getForObject("https://ms-carrito.onrender.com/api/carrito/"+id,Carrito.class);
     }
 
     //Listar productos
